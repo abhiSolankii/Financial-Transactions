@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./financialTransactions.js"></script>
+    <link rel="stylesheet" href="./financialTransactions.css" />
+    <title>Financial Transactions</title>
+  </head>
+  <body>
+    <div>
+      <h1>Financial transactions</h1>
+    </div>
+    <form id="userForm" class="userForm">
+      <div class="month">
+        <span class="inputText">Month </span>
+        <input
+          type="text"
+          placeholder="Enter month"
+          id="month"
+          class="inputBox"
+        />
+      </div>
+      <div class="inflow">
+        <span class="inputText"> Inflow</span>
+        <input
+          type="text"
+          placeholder="Enter inflow amount"
+          id="inflow"
+          class="inputBox"
+        />
+      </div>
+      <div class="outflow">
+        <span class="inputText">Outflow</span>
+        <input
+          type="text"
+          placeholder="Enter outflow amount"
+          id="outflow"
+          class="inputBox"
+        />
+      </div>
+
+      <div class="addButton">
+        <button type="button" onclick="addTransaction()">Add</button>
+      </div>
+      <div id="result"></div>
+    </form>
+  </body>
+</html>
